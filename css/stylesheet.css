@@ -1,0 +1,438 @@
+/*------------GENERAL------------*/
+
+/*fontes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+	font-family: 'CommitMono-400-Regular'; /* Name your font family */
+	src: url('CommitMono-400-Regular.otf');
+  }
+
+@font-face {
+	font-family: 'CommitMono-700-Regular'; /* Name your font family */
+	src: url('CommitMono-700-Regular.otf');
+}
+
+@font-face {
+	font-family: 'CommitMono-400-Italic'; /* Name your font family */
+	src: url('CommitMono-400-Italic.otf');
+  }
+
+@font-face {
+	font-family: 'CommitMono-700-Italic'; /* Name your font family */
+	src: url('CommitMono-700-Italic.otf');
+}
+
+body {
+  background-color: #f9f7ff;
+  font-family: "Work Sans", sans-serif;
+}
+
+#content p {
+	font-family: "CommitMono-400-Regular", "Courier New", Courier, monospace;
+}
+
+h2 {
+	font-family: "Work Sans", sans-serif;
+}
+
+h3 {
+	font-family: "CommitMono-400-Regular", "Courier New", Courier, monospace;
+}
+
+b {
+	font-family: "CommitMono-700-Regular", "Courier New", Courier, monospace;
+}
+
+i {
+	font-family: "CommitMono-400-Italic", "Courier New", Courier, monospace;
+}
+
+/*cores*/
+
+::selection {
+  color: #b3b6ff;
+  background: #0c0717;
+}
+
+/****inicio-scrollbar****/
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+  }
+
+::-webkit-scrollbar-track {
+	background: #f9f7ff;
+  }
+
+::-webkit-scrollbar-thumb {
+	background: #4901e1;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+	background: #0c0717;
+  }
+
+/****fim-scrollbar****/
+
+p, #subtitle {
+  color: #0c0717;
+}
+
+h1, h3 {
+  color: #4901e1;
+}
+
+h2 {
+  color: #814eff;
+}
+
+a {
+  color: #4901e1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #4901e1;
+}
+
+#social:hover {
+	color:#b3b6ff;
+	background-color: #f9f7ff;
+}
+
+/*******INICIO efeito hover home*******/
+
+.project {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4901e1;
+}
+
+.project:hover img {
+  filter:grayscale(100%);
+
+}
+
+.project:hover .overlay {
+  opacity: 80%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*******FIM efeito hover home*******/
+
+/***fade-in carregamento***/
+
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+	pointer-events: none;
+	background: #f9f7ff;
+	animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+    from { opacity: 1 }
+      to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+      to { opacity: 1 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+}
+
+/*configuracao-imagens*/
+img {
+	width:100%;
+	max-width:1920px;
+}
+
+/*------------DESKTOP------------*/
+
+/*textos-desktop*/
+
+#subtitle {
+  font-size: 20px;
+}
+
+#nav a {
+  font-size: 20px;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 48px;
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 36px;
+}
+
+h3 {
+	font-size: 16px;
+	line-height: 28px;
+}
+
+#home {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+#primary {
+	font-size: 16px;
+	line-height: 28px;
+}
+
+#secondary {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+#p-pt {
+	font-size: 16px;
+	line-height: 28px;
+}
+
+#p-eng {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/*layout-desktop*/
+
+.container {
+	width: 1080px;
+	margin: 0 auto; /* centraliza o bloco na página */
+}
+
+.flex-container {
+  display: flex;
+	justify-content: space-between;
+}
+
+body {
+  margin-top: 80px;
+}
+
+#title {
+	margin-bottom: 32px;
+}
+
+#content {
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+
+li {
+  display: inline;
+	margin-left: 40px;
+}
+
+h1 {
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+#primary {
+	margin-right: 48px;
+}
+
+#first-row {
+	margin-right: 24px;
+}
+
+#second-row {
+	margin-left: 24px;
+}
+
+h2 {
+	margin-bottom: 32px;
+}
+
+h3 {
+	margin-bottom: 20px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+#selfie {
+	margin-bottom: 40px;
+}
+
+#first-img {
+	margin-top: 40px;
+}
+
+footer {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	text-align: center;
+}
+
+
+/*------------TABLET------------*/
+
+@media (min-width: 768px) and (max-width: 1079px) {
+
+	/*layout-tablet*/
+
+  .container {
+  	width: 740px;
+  	margin: 0 auto; /* centraliza o bloco na página */
+  }
+
+	.flex-container {
+	  display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	#primary {
+		margin-right: 0px;
+		margin-bottom: 40px;
+	}
+
+	#first-row {
+		margin-right: 0px;
+		margin-bottom: 40px;
+	}
+	
+	#second-row {
+		margin-left: 0px;
+	}
+
+}
+
+/*------------MOBILE------------*/
+
+@media (max-width: 767px) {
+
+/*textos-mobile*/
+
+
+li {
+	line-height: 40px;
+}
+
+h1 {
+  font-size: 28px;
+	line-height: 40px;
+}
+
+h2 {
+  font-size: 18px;
+	line-height: 26px;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/*layout-mobile*/
+
+  .container {
+  	width: 360px;
+  	margin: 0 auto; /* centraliza o bloco na página */
+  }
+
+	.flex-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#title {
+		margin-bottom: 24px;
+	}
+
+	#content {
+		margin-bottom: 80px;
+		margin-top: 60px;
+	}
+
+	li {
+		margin-right: 20px;
+		margin-left: 0px;
+	}
+
+	h1 {
+		margin-top: 40px;
+		margin-bottom: 24px;
+	}
+
+	#primary {
+		margin-right: 0px;
+		margin-bottom: 32px;
+	}
+	
+	#first-row {
+		margin-right: 0px;
+		margin-bottom: 32px;
+	}
+	
+	#second-row {
+		margin-left: 0px;
+	}
+
+	h2 {
+		margin-top: 32px;
+		margin-bottom: 40px;
+	}
+
+	#selfie {
+		margin-bottom: 32px;
+	}
+
+}
