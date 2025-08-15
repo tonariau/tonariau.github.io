@@ -27,7 +27,7 @@
 }
 
 body {
-  background-color: #f9f7ff;
+  background-color: #fff;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -55,55 +55,55 @@ i {
 
 ::selection {
   color: #b3b6ff;
-  background: #0c0717;
+  background: #000;
 }
 
 /****inicio-scrollbar****/
 
 ::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
+	width: 12px;
+	height: 12px;
   }
 
 ::-webkit-scrollbar-track {
-	background: #f9f7ff;
+	background: #fff;
   }
 
 ::-webkit-scrollbar-thumb {
-	background: #4901e1;
+	background: #6528f0;
   }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #0c0717;
+	background: #000;
   }
 
 /****fim-scrollbar****/
 
 p, #subtitle {
-  color: #0c0717;
+  color: #000;
 }
 
 h1, h3 {
-  color: #4901e1;
+  color: #6528f0;
 }
 
 h2 {
-  color: #814eff;
+  color: #6528f0;
 }
 
 a {
-  color: #4901e1;
+  color: #6528f0;
   text-decoration: none;
 }
 
 a:hover {
   color: #fff;
-  background-color: #4901e1;
+  background-color: #6528f0;
 }
 
 #social:hover {
 	color:#b3b6ff;
-	background-color: #f9f7ff;
+	background-color: #fff;
 }
 
 /*******INICIO efeito hover home*******/
@@ -122,7 +122,7 @@ a:hover {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #4901e1;
+  background-color: #6528f0;
 }
 
 .project:hover img {
@@ -131,7 +131,7 @@ a:hover {
 }
 
 .project:hover .overlay {
-  opacity: 80%;
+  opacity: 90%;
 }
 
 .text {
@@ -158,7 +158,7 @@ a:hover {
     height: 100%;
     z-index: 999999;
 	pointer-events: none;
-	background: #f9f7ff;
+	background: #fff;
 	animation-duration: 300ms;
     animation-timing-function: ease-in-out;
 }
@@ -194,26 +194,26 @@ img {
 /*textos-desktop*/
 
 #subtitle {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 #nav a {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h1 {
-	font-size: 32px;
-	line-height: 48px;
+	font-size: 40px;
+	line-height: 56px;
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 24px;
 	line-height: 36px;
 }
 
 h3 {
-	font-size: 16px;
-	line-height: 28px;
+	font-size: 18px;
+	line-height: 32px;
 }
 
 #home {
@@ -231,18 +231,8 @@ h3 {
 	line-height: 24px;
 }
 
-#p-pt {
-	font-size: 16px;
-	line-height: 28px;
-}
-
-#p-eng {
-	font-size: 14px;
-	line-height: 24px;
-}
-
 footer p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
 }
 
@@ -282,12 +272,16 @@ h1 {
 }
 
 #primary {
-	margin-right: 48px;
+	margin-right: 56px;
 }
 
 #first-row {
 	margin-right: 24px;
 }
+
+#first-row img {
+	max-width: auto;
+	}
 
 #second-row {
 	margin-left: 24px;
@@ -326,6 +320,30 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1079px) {
 
+	/*textos-tablet*/
+
+	#subtitle {
+	font-size: 22px;
+	}
+
+	#nav a {
+	font-size: 22px;
+	}
+
+	h1 {
+	font-size: 32px;
+	line-height: 48px;
+	}
+
+	h2 {
+	font-size: 20px;
+	line-height: 32px;
+	}
+
+	#first-row img {
+	max-width: 50%;
+	}
+
 	/*layout-tablet*/
 
   .container {
@@ -357,7 +375,7 @@ footer {
 
 /*------------MOBILE------------*/
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
 /*textos-mobile*/
 
@@ -367,18 +385,36 @@ li {
 }
 
 h1 {
-  font-size: 28px;
+	font-size: 28px;
 	line-height: 40px;
 }
 
 h2 {
-  font-size: 18px;
-	line-height: 26px;
+	font-size: 18px;
+	line-height: 28px;
 }
 
 footer p {
-  font-size: 14px;
-  line-height: 24px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+#primary {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+#secondary {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+#subtitle {
+	font-size: 18px;
+}
+
+#nav a {
+	font-size: 18px;
 }
 
 /*layout-mobile*/
@@ -409,7 +445,6 @@ footer p {
 
 	h1 {
 		margin-top: 40px;
-		margin-bottom: 24px;
 	}
 
 	#primary {
