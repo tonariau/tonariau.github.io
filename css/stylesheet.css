@@ -287,6 +287,10 @@ h1 {
 	margin-left: 24px;
 }
 
+.selfie {
+	width: 800%;
+	}
+
 h2 {
 	margin-bottom: 32px;
 }
@@ -302,7 +306,8 @@ img {
 }
 
 #selfie {
-	margin-bottom: 40px;
+	width: 100%;
+	height: auto;
 }
 
 #first-img {
@@ -468,6 +473,10 @@ footer p {
 
 	#selfie {
 		margin-bottom: 32px;
+	}
+
+	.selfie {
+	width: auto;
 	}
 
 }
